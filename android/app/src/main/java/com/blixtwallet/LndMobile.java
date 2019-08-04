@@ -341,8 +341,8 @@ class LndMobile extends ReactContextBaseJavaModule {
     Log.i(TAG, "sendCommand " + method);
     Log.i(TAG, payloadStr);
     Message message = Message.obtain(null, LndMobileService.MSG_GRPC_COMMAND, req, 0);
-    Bundle bundle = new Bundle();
 
+    Bundle bundle = new Bundle();
     bundle.putString("method", method);
     bundle.putByteArray("payload", Base64.decode(payloadStr, Base64.NO_WRAP));
     message.setData(bundle);
@@ -355,14 +355,12 @@ class LndMobile extends ReactContextBaseJavaModule {
   }
 
   @ReactMethod
-  public void sendStreamCommand(String method, String payloadStr, boolean streamOnlyOnce) {
+  public void sendStreamCommand(String method, String payloadStr, boolean streamOnlyOnce, Promise promise) {
     Log.i(TAG, "sendStreamCommand " + method);
     Log.i(TAG, payloadStr);
     Message message = Message.obtain(null, LndMobileService.MSG_GRPC_STREAM_COMMAND, 0, 0);
-    Bundle bundle = new Bundle();
 
-    // int req = new Random().nextInt();
-    // requests.put(req, null);
+    Bundle bundle = new Bundle();
     bundle.putString("method", method);
     bundle.putByteArray("payload", Base64.decode(payloadStr, Base64.NO_WRAP));
     bundle.putBoolean("stream_only_once", streamOnlyOnce);
@@ -373,5 +371,7 @@ class LndMobile extends ReactContextBaseJavaModule {
     } catch (RemoteException e) {
       e.printStackTrace();
     }
+
+    promise.resolve("done");
   }
 }
