@@ -1,11 +1,13 @@
 import { createStore } from "easy-peasy";
+
 import { model } from "../../src/state/index";
+import LndMobile from "../../src/state/LndMobileInjection";
 
 import { getInfo } from "../../mocks/lndmobile/index";
 
-import LndMobile from "../../src/state/LndMobileInjection";
+jest.setTimeout(10000);
 
-const setupStore = (initialState: any) => createStore(model, {
+const setupStore = (initialState?: any) => createStore(model, {
   injections: {
     lndMobile: LndMobile,
   },
@@ -30,7 +32,5 @@ test("initialize lightning store", async () => {
   await store.getActions().lightning.initialize(undefined);
 
   expect(store.getState().lightning.ready).toBe(true);
-  expect(store.getState().lightning.nodeInfo).toEqual(
-    await getInfo()
-  );
+  expect(store.getState().lightning.nodeInfo).toEqual(await getInfo());
 });

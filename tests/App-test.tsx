@@ -1,13 +1,12 @@
-import "react-native";
 import React from "react";
-import App from "../src/App";
+import { render, toJSON } from "@testing-library/react-native";
 
-import renderer from "react-test-renderer";
+import App from "../src/App";
 
 import { advanceBy, advanceTo, clear } from "jest-date-mock";
 advanceTo(new Date(2019, 0, 1, 1, 0, 0));
 
 it("renders correctly", () => {
-  const tree = renderer.create(<App />).toJSON();
-  expect(tree).toMatchSnapshot();
+  const { container } = render(<App />);
+  expect(toJSON(container)).toMatchSnapshot();
 });

@@ -1,0 +1,319 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  collapsable={true}
+  pointerEvents="box-none"
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "backgroundColor": "#fff",
+        "flex": 1,
+        "height": 1334,
+      }
+    }
+  >
+    <View
+      style={
+        Object {
+          "backgroundColor": "#151313",
+          "flex": 1,
+        }
+      }
+    >
+      <ScrollView
+        contentContainerStyle={
+          Object {
+            "paddingBottom": 12,
+            "paddingLeft": 8,
+            "paddingRight": 8,
+            "paddingTop": 207,
+          }
+        }
+        refreshControl={
+          <RefreshControl
+            colors={
+              Array [
+                "#e5eaea",
+              ]
+            }
+            onRefresh={[Function]}
+            progressBackgroundColor="#232323"
+            progressViewOffset={183}
+            refreshing={false}
+            title="Refreshing"
+          />
+        }
+        scrollEventThrottle={16}
+      >
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "#000",
+                "fontFamily": "System",
+                "fontSize": 16,
+              },
+              Object {
+                "margin": 16,
+                "textAlign": "center",
+              },
+            ]
+          }
+          uppercase={false}
+        >
+          No transactions yet
+        </Text>
+      </ScrollView>
+      <View
+        pointerEvents="box-none"
+        style={
+          Object {
+            "alignItems": "center",
+            "borderBottomColor": "#1F1F1F",
+            "borderBottomWidth": 1,
+            "height": 195,
+            "justifyContent": "center",
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          }
+        }
+      >
+        <BVLinearGradient
+          colors={
+            Array [
+              4293897491,
+              4290536976,
+            ]
+          }
+          endPoint={
+            Object {
+              "x": 0.5,
+              "y": 1,
+            }
+          }
+          locations={null}
+          pointerEvents="box-none"
+          startPoint={
+            Object {
+              "x": 0.5,
+              "y": 0,
+            }
+          }
+          style={
+            Object {
+              "alignItems": "center",
+              "flex": 1,
+              "height": "100%",
+              "justifyContent": "center",
+              "width": "100%",
+            }
+          }
+        >
+          <View
+            style={
+              Object {
+                "bottom": 0,
+                "left": 0,
+                "position": "absolute",
+                "right": 0,
+                "top": 0,
+              }
+            }
+          >
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Array [
+                    Object {
+                      "color": "#000",
+                      "fontSize": 30,
+                    },
+                    Object {
+                      "color": "#000",
+                      "fontSize": 30,
+                    },
+                    Object {
+                      "color": "#e5eaea",
+                      "fontSize": 24,
+                      "left": 8,
+                      "padding": 4,
+                      "paddingRight": 8,
+                      "position": "absolute",
+                      "top": 54,
+                    },
+                  ],
+                  Object {
+                    "fontFamily": "FontAwesome",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+              type="FontAwesome"
+            >
+              
+            </Text>
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Array [
+                    Object {
+                      "color": "#000",
+                      "fontSize": 30,
+                    },
+                    Object {
+                      "color": "#000",
+                      "fontSize": 30,
+                    },
+                    Object {
+                      "color": "#e5eaea",
+                      "fontSize": 24,
+                      "left": 40,
+                      "padding": 4,
+                      "paddingRight": 8,
+                      "position": "absolute",
+                      "top": 55,
+                    },
+                  ],
+                  Object {
+                    "fontFamily": "Entypo",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+              type="Entypo"
+            >
+              
+            </Text>
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Array [
+                    Object {
+                      "color": "#000",
+                      "fontSize": 30,
+                    },
+                    Object {
+                      "color": "#000",
+                      "fontSize": 30,
+                    },
+                    Object {
+                      "color": "#e5eaea",
+                      "fontSize": 24,
+                      "padding": 4,
+                      "position": "absolute",
+                      "right": 8,
+                      "top": 55,
+                    },
+                  ],
+                  Object {
+                    "fontFamily": "anticon",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+              type="AntDesign"
+            >
+              
+            </Text>
+            <Text
+              allowFontScaling={false}
+              style={
+                Array [
+                  Object {
+                    "color": undefined,
+                    "fontSize": 12,
+                  },
+                  Array [
+                    Object {
+                      "color": "#000",
+                      "fontSize": 30,
+                    },
+                    Object {
+                      "color": "#000",
+                      "fontSize": 30,
+                    },
+                    Object {
+                      "color": "#e5eaea",
+                      "fontSize": 24,
+                      "padding": 4,
+                      "position": "absolute",
+                      "right": 44,
+                      "top": 55,
+                    },
+                  ],
+                  Object {
+                    "fontFamily": "Ionicons",
+                    "fontStyle": "normal",
+                    "fontWeight": "normal",
+                  },
+                  Object {},
+                ]
+              }
+            >
+              
+            </Text>
+          </View>
+          <Text
+            style={
+              Object {
+                "color": "#e5eaea",
+                "fontFamily": "System",
+                "fontSize": 39,
+                "marginBottom": 3,
+                "marginTop": 14,
+                "paddingTop": 58,
+              }
+            }
+          >
+            0
+             ₿
+          </Text>
+          <Text
+            style={
+              Object {
+                "color": "#e5eaea",
+                "fontFamily": "System",
+                "fontSize": 18,
+                "opacity": 1,
+              }
+            }
+          >
+            0
+             USD
+          </Text>
+        </BVLinearGradient>
+      </View>
+    </View>
+  </View>
+</View>
+`;

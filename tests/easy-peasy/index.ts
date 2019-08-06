@@ -24,6 +24,7 @@ test("initialize index store", async () => {
 
 test("create wallet", async () => {
   await store.getActions().initializeApp(undefined);
+  await store.getActions().generateSeed(undefined);
   await store.getActions().createWallet({
     password: "test12345",
   });

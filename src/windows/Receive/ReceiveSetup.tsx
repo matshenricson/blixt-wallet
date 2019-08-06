@@ -87,6 +87,7 @@ export default ({ navigation }: IReceiveSetupProps) => {
     title: `Amount ${BitcoinUnits[bitcoinUnit].nice}`,
     component: (
       <Input
+        testID="input-amount-sat"
         onChangeText={onChangeSatInput}
         placeholder="1000 (optional)"
         value={satValue !== undefined ? satValue.toString() : undefined}
@@ -119,6 +120,7 @@ export default ({ navigation }: IReceiveSetupProps) => {
     title: "Message",
     component: (
       <Input
+        testID="input-message"
         onChangeText={setDescription}
         placeholder="Message to payer (optional)"
         value={description}
@@ -141,7 +143,7 @@ export default ({ navigation }: IReceiveSetupProps) => {
       <BlixtForm
         items={formItems}
         buttons={[
-          <Button key="CREATE_INVOICE" block={true} primary={true} onPress={onCreateInvoiceClick}>
+          <Button testID="create-invoice" key="CREATE_INVOICE" block={true} primary={true} onPress={onCreateInvoiceClick}>
             <Text>Create invoice</Text>
           </Button>
         ]}

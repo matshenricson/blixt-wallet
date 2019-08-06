@@ -2,6 +2,8 @@
 
 exports[`renders correctly 1`] = `
 <View
+  collapsable={true}
+  pointerEvents="box-none"
   style={
     Object {
       "flex": 1,
@@ -11,20 +13,26 @@ exports[`renders correctly 1`] = `
   <View
     style={
       Object {
-        "backgroundColor": "#151313",
         "flex": 1,
-        "height": 1334,
       }
     }
   >
-    <RCTScrollView
-      contentContainerStyle={
+    <View
+      style={
         Object {
-          "padding": 2,
+          "backgroundColor": "#151313",
+          "flex": 1,
+          "height": 1334,
         }
       }
     >
-      <View>
+      <ScrollView
+        contentContainerStyle={
+          Object {
+            "padding": 2,
+          }
+        }
+      >
         <View
           style={
             Array [
@@ -39,17 +47,8 @@ exports[`renders correctly 1`] = `
             ]
           }
         >
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -65,7 +64,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -92,18 +90,9 @@ exports[`renders correctly 1`] = `
             >
               actions.clearApp()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -119,7 +108,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -146,18 +134,9 @@ exports[`renders correctly 1`] = `
             >
               actions.resetDb()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -173,7 +152,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -200,18 +178,9 @@ exports[`renders correctly 1`] = `
             >
               actions.clearTransactions()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -227,7 +196,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -254,18 +222,9 @@ exports[`renders correctly 1`] = `
             >
               walletCreated = true
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -281,7 +240,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -308,18 +266,9 @@ exports[`renders correctly 1`] = `
             >
               actions.initializeApp()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -335,7 +284,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -362,18 +310,9 @@ exports[`renders correctly 1`] = `
             >
               createTransaction()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -389,7 +328,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -416,18 +354,9 @@ exports[`renders correctly 1`] = `
             >
               Create demo transactions
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -443,7 +372,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -470,18 +398,9 @@ exports[`renders correctly 1`] = `
             >
               getTransactions()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -497,7 +416,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -524,18 +442,9 @@ exports[`renders correctly 1`] = `
             >
               getTransaction(1)
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -551,7 +460,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -578,18 +486,9 @@ exports[`renders correctly 1`] = `
             >
               LndMobile.init()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -605,7 +504,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -632,18 +530,9 @@ exports[`renders correctly 1`] = `
             >
               navigation.navigate("Init")
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -659,7 +548,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -686,18 +574,9 @@ exports[`renders correctly 1`] = `
             >
               navigation.navigate("Overview")
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -713,7 +592,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -740,18 +618,9 @@ exports[`renders correctly 1`] = `
             >
               navigation.navigate("InitLightning")
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -767,7 +636,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -794,18 +662,9 @@ exports[`renders correctly 1`] = `
             >
               navigation.navigate("Welcome")
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -821,7 +680,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -848,18 +706,9 @@ exports[`renders correctly 1`] = `
             >
               writeConfigFile()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -875,7 +724,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -903,18 +751,9 @@ exports[`renders correctly 1`] = `
               mockConstructor
               ()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -930,7 +769,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -958,18 +796,9 @@ exports[`renders correctly 1`] = `
               mockConstructor
               ()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -985,7 +814,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -1013,18 +841,9 @@ exports[`renders correctly 1`] = `
               mockConstructor
               ()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -1040,7 +859,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -1068,18 +886,9 @@ exports[`renders correctly 1`] = `
               mockConstructor
               ()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -1095,7 +904,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -1123,18 +931,9 @@ exports[`renders correctly 1`] = `
               mockConstructor
               ()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -1150,7 +949,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -1177,18 +975,9 @@ exports[`renders correctly 1`] = `
             >
               stopDaemon()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -1204,7 +993,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -1231,18 +1019,9 @@ exports[`renders correctly 1`] = `
             >
               initWallet()
             </Text>
-          </View>
-          <View
-            accessible={true}
-            clickable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
+          </TouchableOpacity>
+          <TouchableOpacity
+            activeOpacity={0.5}
             style={
               Object {
                 "alignItems": "center",
@@ -1258,7 +1037,6 @@ exports[`renders correctly 1`] = `
                 "flexDirection": "row",
                 "height": 45,
                 "justifyContent": "space-between",
-                "opacity": 1,
                 "paddingBottom": 6,
                 "paddingTop": 6,
                 "shadowColor": undefined,
@@ -1285,12 +1063,11 @@ exports[`renders correctly 1`] = `
             >
               walletBalance()
             </Text>
-          </View>
+          </TouchableOpacity>
         </View>
         <TextInput
           allowFontScaling={true}
           editable={true}
-          onChangeText={[Function]}
           placeholder="<pubkey>@><host>"
           placeholderTextColor="#575757"
           rejectResponderTermination={true}
@@ -1307,17 +1084,8 @@ exports[`renders correctly 1`] = `
           underlineColorAndroid="rgba(0,0,0,0)"
           value=""
         />
-        <View
-          accessible={true}
-          clickable={true}
-          isTVSelectable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          activeOpacity={0.5}
           style={
             Object {
               "alignItems": "center",
@@ -1333,7 +1101,6 @@ exports[`renders correctly 1`] = `
               "flexDirection": "row",
               "height": 45,
               "justifyContent": "space-between",
-              "opacity": 1,
               "paddingBottom": 6,
               "paddingTop": 6,
               "shadowColor": undefined,
@@ -1360,12 +1127,11 @@ exports[`renders correctly 1`] = `
           >
             connectPeer()
           </Text>
-        </View>
+        </TouchableOpacity>
         <TextInput
           allowFontScaling={true}
           editable={true}
           keyboardType="numeric"
-          onChangeText={[Function]}
           placeholder="Satoshi"
           placeholderTextColor="#575757"
           rejectResponderTermination={true}
@@ -1382,17 +1148,8 @@ exports[`renders correctly 1`] = `
           underlineColorAndroid="rgba(0,0,0,0)"
           value=""
         />
-        <View
-          accessible={true}
-          clickable={true}
-          isTVSelectable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          activeOpacity={0.5}
           style={
             Object {
               "alignItems": "center",
@@ -1408,7 +1165,6 @@ exports[`renders correctly 1`] = `
               "flexDirection": "row",
               "height": 45,
               "justifyContent": "space-between",
-              "opacity": 1,
               "paddingBottom": 6,
               "paddingTop": 6,
               "shadowColor": undefined,
@@ -1435,11 +1191,10 @@ exports[`renders correctly 1`] = `
           >
             openChannel()
           </Text>
-        </View>
+        </TouchableOpacity>
         <TextInput
           allowFontScaling={true}
           editable={true}
-          onChangeText={[Function]}
           placeholder="Address"
           placeholderTextColor="#575757"
           rejectResponderTermination={true}
@@ -1456,17 +1211,8 @@ exports[`renders correctly 1`] = `
           underlineColorAndroid="rgba(0,0,0,0)"
           value=""
         />
-        <View
-          accessible={true}
-          clickable={true}
-          isTVSelectable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          activeOpacity={0.5}
           style={
             Object {
               "alignItems": "center",
@@ -1482,7 +1228,6 @@ exports[`renders correctly 1`] = `
               "flexDirection": "row",
               "height": 45,
               "justifyContent": "space-between",
-              "opacity": 1,
               "paddingBottom": 6,
               "paddingTop": 6,
               "shadowColor": undefined,
@@ -1509,11 +1254,10 @@ exports[`renders correctly 1`] = `
           >
             sendCoins()
           </Text>
-        </View>
+        </TouchableOpacity>
         <TextInput
           allowFontScaling={true}
           editable={true}
-          onChangeText={[Function]}
           placeholder="tx"
           placeholderTextColor="#575757"
           rejectResponderTermination={true}
@@ -1530,17 +1274,8 @@ exports[`renders correctly 1`] = `
           underlineColorAndroid="rgba(0,0,0,0)"
           value=""
         />
-        <View
-          accessible={true}
-          clickable={true}
-          isTVSelectable={true}
-          onClick={[Function]}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
+        <TouchableOpacity
+          activeOpacity={0.5}
           style={
             Object {
               "alignItems": "center",
@@ -1556,7 +1291,6 @@ exports[`renders correctly 1`] = `
               "flexDirection": "row",
               "height": 45,
               "justifyContent": "space-between",
-              "opacity": 1,
               "paddingBottom": 6,
               "paddingTop": 6,
               "shadowColor": undefined,
@@ -1583,7 +1317,7 @@ exports[`renders correctly 1`] = `
           >
             closeChannel()
           </Text>
-        </View>
+        </TouchableOpacity>
         <Text
           style={
             Object {
@@ -1598,7 +1332,6 @@ exports[`renders correctly 1`] = `
           :
         </Text>
         <Text
-          onPress={[Function]}
           selectable={true}
           style={
             Object {
@@ -1625,7 +1358,6 @@ exports[`renders correctly 1`] = `
            error:
         </Text>
         <Text
-          onPress={[Function]}
           selectable={true}
           style={
             Object {
@@ -1638,97 +1370,64 @@ exports[`renders correctly 1`] = `
         >
           {}
         </Text>
-      </View>
-    </RCTScrollView>
-  </View>
-  <Modal
-    animationType="fade"
-    hardwareAccelerated={false}
-    onRequestClose={[Function]}
-    transparent={true}
-    visible={false}
-  >
-    <View
-      accessible={true}
-      clickable={true}
-      isTVSelectable={true}
-      onClick={[Function]}
-      onResponderGrant={[Function]}
-      onResponderMove={[Function]}
-      onResponderRelease={[Function]}
-      onResponderTerminate={[Function]}
-      onResponderTerminationRequest={[Function]}
-      onStartShouldSetResponder={[Function]}
-      style={
-        Object {
-          "backgroundColor": "rgba(0,0,0,0.4)",
-          "flex": 1,
-          "justifyContent": "flex-end",
-          "opacity": 1,
-        }
-      }
+      </ScrollView>
+    </View>
+    <Modal
+      animationType="fade"
+      hardwareAccelerated={false}
+      transparent={true}
+      visible={false}
     >
-      <View
-        accessible={true}
-        clickable={false}
-        isTVSelectable={true}
-        onClick={[Function]}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
+      <TouchableOpacity
+        activeOpacity={1}
         style={
           Object {
-            "backgroundColor": "#fff",
-            "elevation": 4,
-            "maxHeight": 667,
-            "minHeight": 56,
-            "opacity": 1,
-            "padding": 15,
+            "backgroundColor": "rgba(0,0,0,0.4)",
+            "flex": 1,
+            "justifyContent": "flex-end",
           }
         }
       >
-        <RCTScrollView
-          data={Array []}
-          disableVirtualization={false}
-          getItem={[Function]}
-          getItemCount={[Function]}
-          horizontal={false}
-          initialNumToRender={10}
-          keyExtractor={[Function]}
-          maxToRenderPerBatch={10}
-          numColumns={1}
-          onContentSizeChange={[Function]}
-          onEndReachedThreshold={2}
-          onLayout={[Function]}
-          onMomentumScrollEnd={[Function]}
-          onScroll={[Function]}
-          onScrollBeginDrag={[Function]}
-          onScrollEndDrag={[Function]}
-          removeClippedSubviews={false}
-          renderItem={[Function]}
-          scrollEventThrottle={50}
-          stickyHeaderIndices={Array []}
+        <TouchableOpacity
+          activeOpacity={1}
           style={
-            Array [
-              Object {
-                "marginHorizontal": -15,
-              },
-              Object {
-                "marginTop": 0,
-              },
-            ]
+            Object {
+              "backgroundColor": "#fff",
+              "elevation": 4,
+              "maxHeight": 667,
+              "minHeight": 56,
+              "padding": 15,
+            }
           }
-          updateCellsBatchingPeriod={50}
-          viewabilityConfigCallbackPairs={Array []}
-          windowSize={21}
         >
-          <View />
-        </RCTScrollView>
-      </View>
-    </View>
-  </Modal>
+          <ScrollView
+            data={Array []}
+            disableVirtualization={false}
+            horizontal={false}
+            initialNumToRender={10}
+            maxToRenderPerBatch={10}
+            numColumns={1}
+            onEndReachedThreshold={2}
+            removeClippedSubviews={false}
+            scrollEventThrottle={50}
+            stickyHeaderIndices={Array []}
+            style={
+              Array [
+                Object {
+                  "marginHorizontal": -15,
+                },
+                Object {
+                  "marginTop": 0,
+                },
+              ]
+            }
+            updateCellsBatchingPeriod={50}
+            viewabilityConfigCallbackPairs={Array []}
+            windowSize={21}
+          />
+        </TouchableOpacity>
+      </TouchableOpacity>
+    </Modal>
+  </View>
 </View>
 `;
